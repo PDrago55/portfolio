@@ -12,7 +12,7 @@ PICTURES WILL FOLLOW ON COMPLETION
 
 A nav bar, and cool about section about myself, media queries fit on Apple tablets, and phones
 
-## <img src="public/about.png" alt="aboutsection">
+## <img src="client/public/about.png" alt="aboutsection">
 
 ---
 
@@ -20,7 +20,7 @@ A nav bar, and cool about section about myself, media queries fit on Apple table
 
 I tried to have fun with this section by creating a drop down of my languages learnt and practiced. I really wanted to keep the images clean.
 
-## <img src="public/projectbub.png" alt="photoProjects">
+## <img src="client/public/projectbub.png" alt="photoProjects">
 
 ---
 
