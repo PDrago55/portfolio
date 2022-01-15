@@ -16,37 +16,37 @@ function Languages() {
         <div className="lang-card">
           <div className="lang-circle">
             Front End
-            <li className="list-container" tabIndex="0">
+            <ul className="list-container" tabIndex="0">
               <li>React</li>
               <li>Redux</li>
               <li>HTML5</li>
               <li>{`CSS3 & SASS`}</li>
               <li>Material UI</li>
-            </li>
+            </ul>
           </div>
         </div>
         <div className="lang-card">
           <div className="lang-circle">
             Back End
-            <li className="list-container" tabIndex="0">
+            <ul className="list-container" tabIndex="0">
               <li>Node</li>
               <li>Express</li>
               <li>MongoDB</li>
               <li>MySQL</li>
               <li>JS Web Tokens</li>
-            </li>
+            </ul>
           </div>
         </div>
         <div className="lang-card">
           <div className="lang-circle">
             Tools
-            <li className="list-container" id="tool_id" tabIndex="0">
+            <ul className="list-container" id="tool_id" tabIndex="0">
               <li>Git</li>
               <li>GitHub</li>
               <li>Trello</li>
               <li>Figma</li>
               <li>NPM</li>
-            </li>
+            </ul>
           </div>
         </div>
       </div>

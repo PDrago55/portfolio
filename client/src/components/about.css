@@ -29,10 +29,10 @@
 .about-text {
   text-align: justify;
   width: 500px;
-  border: 1px solid #000;
   border-radius: 15px;
   padding: 20px;
   line-height: 1.5;
+  white-space: pre-wrap;
 }
 
 /* MEDIA QUERIES */
