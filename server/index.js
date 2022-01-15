@@ -4,22 +4,18 @@ const express = require("express");
 const favicon = require("express-favicon");
 const path = require("path");
 const port = process.env.PORT || 8080;
-const app = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-const PORT = 4000;
 const creds = require("./config");
-const path = require("path");
-const favicon = require("express-favicon");
-app.use(favicon(__dirname + "/build/favicon.ico"));
-// the __dirname is the current directory from where the script is running
-app.use(express.static(path.join(__dirname, "/server/build")));
-app.get("/ping", function (req, res) {
-  return res.send("pong");
-});
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "/server/build/index.html"));
-});
+// app.use(favicon(__dirname + "/build/favicon.ico"));
+// // the __dirname is the current directory from where the script is running
+// app.use(express.static(path.join(__dirname, "/server/build")));
+// app.get("/ping", function (req, res) {
+//   return res.send("pong");
+// });
+// app.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "build", "/server/build/index.html"));
+// });
 
 const transport = {
   host: "smtp.gmail.com",
@@ -34,9 +30,9 @@ const transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
   if (error) {
-    console.log(error);
+    //null
   } else {
-    console.log("server can take messages");
+    //console.log("server can take messages");
   }
 });
 
@@ -91,10 +87,9 @@ express()
       }
     });
     res.send(subject);
-    console.log("here");
-  });
+  })
 
-app.listen(port);
+  .listen(port);
 
 //const express = require("express");
 

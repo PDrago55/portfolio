@@ -24,7 +24,7 @@ function ModalContact() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/api/contact", {
+    fetch("api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,8 +44,6 @@ function ModalContact() {
   };
   return (
     <>
-      {/* //build modal with material UI */}
-
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Contact
       </Button>
