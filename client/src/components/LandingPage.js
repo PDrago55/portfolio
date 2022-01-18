@@ -1,7 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import ArrowUp from "./ArrowUp";
-//import Emoji from "./Emoji";
+import Emoji from "./Emoji";
 import About from "./About";
 import Languages from "./Languages";
 import Projects from "./Projects";
