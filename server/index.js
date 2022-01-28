@@ -7,15 +7,6 @@ const port = process.env.PORT || 8080;
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
-// app.use(favicon(__dirname + "/build/favicon.ico"));
-// // the __dirname is the current directory from where the script is running
-// app.use(express.static(path.join(__dirname, "/server/build")));
-// app.get("/ping", function (req, res) {
-//   return res.send("pong");
-// });
-// app.get("/*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "build", "/server/build/index.html"));
-// });
 
 const transport = {
   host: "smtp.gmail.com",
