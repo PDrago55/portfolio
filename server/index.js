@@ -44,7 +44,7 @@ express()
   .use(bodyParser.json())
 
   //setting up heroku//
-  .use(favicon(__dirname + "/public/favicon.ico"))
+  .use(favicon(__dirname + "server/build/favicon.ico"))
   .use(express.static(__dirname))
   .use(express.static(path.join(__dirname, "build")))
   .get("/ping", function (req, res) {
