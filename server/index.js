@@ -89,8 +89,8 @@ express()
     res.send(subject);
   })
 
-  .get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  })
+  // .get("*", (req, res) => {
+  //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  // })
 
   .listen(port);
