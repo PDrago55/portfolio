@@ -84,4 +84,4 @@ express()
     res.sendFile(path.join(__dirname, "build", "index.html"));
   })
 
-  .listen(port);
+  .listen(process.env.PORT || 8080);
