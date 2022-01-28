@@ -55,7 +55,7 @@ express()
   //setting up heroku//
   .use(favicon(__dirname + "/public/initial.png"))
   .use(express.static(__dirname))
-  .use(express.static(path.join(__dirname, "client", "build")))
+  .use(express.static(path.join(__dirname, "build")))
   .get("/ping", function (req, res) {
     return res.send("pong");
   })
@@ -90,7 +90,7 @@ express()
   })
 
   .get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+    res.sendFile(path.join(__dirname, "build", "index.html"));
   })
 
   .listen(port);
