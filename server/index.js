@@ -3,7 +3,7 @@
 const express = require("express");
 const favicon = require("express-favicon");
 const path = require("path");
-const port = process.env.PORT || 8080;
+//const port = process.env.PORT || 8080;
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const creds = require("./config");
