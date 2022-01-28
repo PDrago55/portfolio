@@ -59,9 +59,9 @@ express()
   .get("/ping", function (req, res) {
     return res.send("pong");
   })
-  .get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
-  })
+  // .get("/*", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "build", "index.html"));
+  // })
 
   ///endpoints
   .post("/api/contact", async (req, res) => {
@@ -89,8 +89,8 @@ express()
     res.send(subject);
   })
 
-  // .get("*", (req, res) => {
-  //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  // })
+  .get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  })
 
   .listen(port);
