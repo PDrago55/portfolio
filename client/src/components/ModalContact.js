@@ -6,8 +6,8 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import Emoji from "./Emoji";
 import "./ModalContact.css";
+
 function ModalContact() {
   //useState for my Forms
   const [open, setOpen] = useState(false);
@@ -44,7 +44,12 @@ function ModalContact() {
   };
   return (
     <>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+      <Button
+        variant="outlined"
+        color="primary"
+        onClick={handleClickOpen}
+        style={{ padding: "15px", width: "200px", marginTop: "25px" }}
+      >
         Contact
       </Button>
       <Dialog
@@ -52,8 +57,7 @@ function ModalContact() {
         onClose={handleClickClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">{`Contact 
-        ${(<Emoji symbol="👨‍💻" label="man technologist" />)}`}</DialogTitle>
+        <DialogTitle id="form-dialog-title">{`Contact`}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             Hey! If you want to book a meeting for consulting or just want to

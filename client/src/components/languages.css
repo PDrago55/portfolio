@@ -138,15 +138,15 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .lang-desc {
     text-align: justify;
-    width: 300px;
+    width: 260px;
     border-radius: 0;
     padding: 5px;
     line-height: 1.5;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 15px;
   }
   .lang-container {
     display: flex;
@@ -179,7 +179,7 @@
     visibility: hidden;
     list-style-type: none;
     top: 100%;
-    left: -100px;
+    left: -160px;
     transform: translateY(-1em);
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
@@ -189,5 +189,75 @@
     font-size: 12px;
     text-align: center;
     padding: 8px;
+  }
+
+  #tool_id {
+    left: -100px;
+    transform: translateY(-1em);
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+      z-index 0s linear 0.01s;
+  }
+}
+
+@media (max-width: 375px) {
+  .lang-desc {
+    text-align: justify;
+    width: 260px;
+    border-radius: 0;
+    padding: 5px;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .lang-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10px;
+  }
+  .lang-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #39bcc5;
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 2px solid #39bcc5;
+    cursor: pointer;
+  }
+
+  .list-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    list-style-type: none;
+    top: 100%;
+    left: -160px;
+    transform: translateY(-1em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+      z-index 0s linear 0.01s;
+  }
+  .list-container li {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  #tool_id {
+    left: -100px;
+    transform: translateY(-1em);
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+      z-index 0s linear 0.01s;
   }
 }

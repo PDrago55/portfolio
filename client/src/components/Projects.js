@@ -18,7 +18,7 @@ function Projects() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <span className="title">Altitude Distributions</span>
+            <div className="title">Altitude Distributions</div>
           </a>
           <img src="altitude.png" alt="wix"></img>
           <div>

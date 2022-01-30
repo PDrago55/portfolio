@@ -5,3 +5,30 @@
   align-items: center;
   padding: 0 0 50px 0;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-desc {
+  font-size: 20px;
+  padding: 1% 24%;
+}
+
+@media (max-width: 414px) {
+  .contact-desc {
+    font-size: 15px;
+    padding: 1% 14%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-desc {
+    font-size: 15px;
+    padding: 1% 14%;
+  }
+}

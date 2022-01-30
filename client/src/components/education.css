@@ -86,6 +86,38 @@
     text-align: justify;
   }
 }
+@media (max-width: 414px) {
+  .edu-container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .edu-container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .study {
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 2px solid #39bcc5;
+    margin: 20px auto;
+    width: max-content;
+  }
+  .edu-text {
+    line-height: 1.5;
+    margin-right: 30px;
+    font-size: 15px;
+  }
+  .edu-text-container {
+    margin: 0 0 0 35px;
+    text-align: justify;
+  }
+}
 
 @media (max-width: 375px) {
   .edu-container-main {
@@ -112,7 +144,7 @@
   .edu-text {
     line-height: 1.5;
     margin-right: 30px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .edu-text-container {
     margin: 0 0 0 35px;
